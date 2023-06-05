@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2517d8924d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="slider">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experiences</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="social-icons">
+                        <a href="https://github.com/vageesh1"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vageesh-jangra-2555a621a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vageeshjangra/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-duotone fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Specialist</p>
+                <h1>Hey, I'm <span>Vageesh</span> <br> from IIT Jodhpur</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about-----------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there, I'm Vageesh , Pre-Final year student at Indian Institute of
+                        Technology, Jodhpur. I am currently interested in Artificial Intelligence/Data Science and
+                        Software Development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>C/C++</li>
+                            <li>HTML/CSS</li>
+                            <li>Shell</li>
+                            </li>
+                            <li><span>Libraries and Framework</span><br>
+                            <li>Tensorflow</li>
+                            <li>Pytorch</li>
+                            <li>OpenCV</li>
+                            <li>Sklearn</li>
+                            <li>Pandas</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2023 - May 2023</span><br>Deep Learning Researcher at Pucho Digital Health Inc ,
+                                Banglore.</li>
+                            <li><span>June 2022 - July 2022</span><br>Computer Vision Internship at Probility, Germany.
+                            </li>
+                            <li><span>June 2023 - </span><br>Machine Learning Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>December 2020</span><br>B.Tech in Artificial Intelligance and Data Science from
+                                IIT Jodhpur - CGPA : 6.59</li>
+                            <li><span>March 2020</span><br>12th from RPS Rewari,Haryana - Percentage : 95.0</li>
+                            <li><span>March 2018</span><br>10th from RPS Rewari,Haryana - Percentage : 92.2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------sevices-------------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Computer Vision Internship</h2>
+                    <h4>Probility</h4>
+                    <p>
+                        <li>Using Yolov5 with Resnet50 for forklifts detection</li>
+                        <li>Using Alphapose for Human pose detection</li>
+                        <li>Modifying the Alphapose for forklifts pose detection and making it to production</li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Deep Learning Researcher</h2>
+                    <h4>Pucho Digital Health Inc.</h4>
+                    <p>
+                        <li>Working with cough and breath detection</li>
+                        <li>Making an interactive chatbot with LLMs</li>
+                        <li>Drug recommendation according to patient symptoms</li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Machine Learning Intern</h2>
+                    <h4>Jio Reliance</h4>
+                    <p>
+                        <li>Working with ML explainable Engine</li>
+                        <li>Working with Model Deployement </li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class=" container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class=" work-list">
+                <div class=" work">
+                    <img src="images/work_1.png">
+                    <div class="layer">
+                        <h3>Movie Recomendation System</h3>
+                        <p>
+                            <li>Making 4 different models for Movie Recommendation</li>
+                            <li>Making Collaborative and content-based recommendations</li>
+                            <li>Analyzing the performance for each model on the basis of the Average rating of Movies
+                                Recommended</li>
+                            <li>Deploying it using Streamlit on Hugging Face </li>
+                        </p>
+                        <a href="https://huggingface.co/spaces/Vageesh1/Movie-Recommendation-System"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="  work">
+                    <img src="images/work_2.png">
+                    <div class="layer">
+                        <h3>Image Captioning</h3>
+                        <p>
+                            <li>Used pre trained Model, fine tuned model, Trained Model </li>
+                            <li>Analysed Bias, BLEU score, accuracy and others metrics</li>
+                            <li>Deploying it using Streamlit on Hugging Face </li>
+                        </p>
+                        <a href="https://huggingface.co/spaces/Vageesh1/clip_gpt2"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class=" work">
+                    <img src="images/work_3.png">
+                    <div class="layer">
+                        <h3>Hard Hat Detector</h3>
+                        <p>
+                            <li>Converting annotations in Tensorflow and YOLOv5 format</li>
+                            <li>Running object detector on them and then changing the bounding box color according to
+                                hat
+                                color</li>
+                        </p>
+                        <a href="https://github.com/vageesh1/Hard-Hat-Detector"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vageesh1?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------------contact-----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> vageesh1120@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 9518002014 </p>
+                    <a href="images/Vageesh Resume (3).pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> @ 2023 Vageesh</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
