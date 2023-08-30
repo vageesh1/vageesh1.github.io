@@ -379,6 +379,23 @@ nav .fas{
         font-size: 14px;
     }
 }
+
+.scrollable-content {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+
 #msg{
     color: #61b752;
     margin-top: -40px;
